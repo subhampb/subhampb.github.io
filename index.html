@@ -312,7 +312,69 @@
   .swatch-growth{
     background: linear-gradient(200deg, #dfe3e6, #a9b4bd 55%, #6d7a86);
   }
+  /* ---------- notes ---------- */
 
+  .notes-section{
+    padding: 72px 0 24px;
+  }
+
+  .notes-section h2{
+    font-size: 26px;
+    margin: 0 0 28px;
+  }
+
+  .notes-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .notes-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .notes-list li > a:first-child{
+    text-decoration: none;
+    flex: 1;
+  }
+
+  .notes-list h3{
+    font-size: 18px;
+    margin: 0 0 4px;
+  }
+
+  .notes-list p{
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+
+  .notes-meta{
+    font-size: 12px;
+    color: var(--ink-faint);
+  }
+
+  .notes-source{
+    font-size: 13px;
+    color: var(--ink-faint);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    white-space: nowrap;
+  }
+
+  .notes-list li > a:first-child:hover h3{
+    color: var(--accent);
+  }
+
+  @media (max-width: 560px){
+    .notes-list li{ flex-direction: column; align-items: flex-start; gap: 10px; }
+  }
   /* ---------- footer ---------- */
 
   footer{
@@ -468,6 +530,21 @@
   </section>
 
   <section class="focus-section" id="projects">
+      <section class="notes-section" id="notes">
+    <div class="wrap">
+      <h2>Notes</h2>
+      <ul class="notes-list">
+        <li>
+          <a href="physics_notes.pdf" target="_blank" rel="noopener">
+            <h3>General Concepts of Physics and Methods of Solving Problems</h3>
+            <p>Idealization, the DI method, the estimate method, and problem classification. Worked examples included.</p>
+            <span class="notes-meta">PDF · 8 pages</span>
+          </a>
+          <a class="notes-source" href="physics_notes.tex" download>LaTeX source</a>
+        </li>
+      </ul>
+    </div>
+      </section>
     <div class="wrap">
       <h2>Recent focus</h2>
       <div class="focus-grid">
